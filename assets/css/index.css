@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background: #ffe6f0;
+    color: #5a004f;
+    padding: 20px;
+}
+
+/* Barre nav en haut */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #ffb3d9;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.nav-left p, .nav-right a {
+    font-size: 1em;
+    color: #cc3377;
+    margin: 0;
+}
+
+.nav-left a, .nav-right a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #cc3377;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+    text-decoration: underline;
+}
+
+/* Titre centré en dessous */
+.site-title {
+    text-align: center;
+    font-size: 3em;
+    color: #e60073; 
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* Container produits côte à côte */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Carte produit */
+.product {
+    background: #fff0f6;
+    border: 2px solid #ff99cc;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(255, 102, 179, 0.3);
+    flex: 1 1 300px;
+    max-width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 102, 179, 0.6);
+}
+
+.product img {
+    border-radius: 10px;
+    margin: 15px auto;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.05);
+}
+
+/* Form bouton bas */
+.add-to-cart-form {
+    margin-top: auto;
+}
+
+/* Boutons */
+button {
+    background: #ff66b3;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background: #ff4da6;
+}
+
+button:focus, a:focus {
+    outline: 2px dashed #cc3377;
+    outline-offset: 4px;
+}
+
+button:disabled {
+    background: #ddd;
+    color: #999;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Lien connectez-vous */
+.login-prompt a {
+    color: #cc3377;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-prompt a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+    .products-container {
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .product {
+        padding: 15px;
+    }
+
+    .site-title {
+        font-size: 2em;
+    }
+}

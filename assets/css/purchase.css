@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background-color: #ffe6f0;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #5a004f;
+    padding: 30px 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff66b3;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.message {
+    background-color: #ffd6e8;
+    color: #b30059;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(255, 102, 179, 0.3);
+}
+
+.cart-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(255, 102, 179, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.cart-table thead {
+    background: linear-gradient(90deg, #ff66b3, #ff4da6);
+    color: white;
+    font-weight: 600;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ffd6e8;
+    font-size: 1rem;
+}
+
+.cart-table tbody tr:nth-child(even) {
+    background-color: #fff0f6;
+}
+
+.cart-table tbody tr:hover {
+    background-color: #ffe0f2;
+}
+
+.actions-td {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.inline-form {
+    display: inline;
+}
+
+.btn-action {
+    background-color: #ff66b3;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.btn-action:hover {
+    background-color: #ff4da6;
+}
+
+.total-price {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    text-align: right;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #cc2979;
+    text-shadow: 0 0 3px #ff99cc;
+}
+
+.checkout-form {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    text-align: right;
+}
+
+.btn-checkout {
+    background-color: #ff66b3;
+    border: none;
+    color: white;
+    padding: 14px 36px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(255, 102, 179, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.btn-checkout:hover {
+    background-color: #ff4da6;
+    box-shadow: 0 6px 15px rgba(255, 77, 166, 0.6);
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: #ff99cc;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #5a004f;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(255, 153, 204, 0.5);
+    transition: background-color 0.3s ease;
+    max-width: 180px;
+}
+
+.btn-back:hover {
+    background-color: #ff66b3;
+    color: white;
+}

@@ -1,0 +1,120 @@
+/* Style global du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background: #fff0f6; /* rose pastel */
+    color: #4a2c40;
+    margin: 20px;
+}
+
+/* Liens */
+a {
+    color: #d6336c;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Titres */
+h1, h2, h3 {
+    color: #a83258;
+}
+
+/* Tableaux */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(216, 83, 128, 0.2); /* ombre douce rose */
+}
+
+th, td {
+    border: 1px solid #f4c2d1;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f9a9c4;
+    color: #5a1e36;
+}
+
+/* Champs de formulaire */
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #f4c2d1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #5a1e36;
+    background-color: #fff0f6;
+    resize: vertical;
+}
+
+textarea {
+    min-height: 50px;
+}
+
+/* Boutons */
+button {
+    background-color: #d6336c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a83258;
+}
+
+/* Formulaires généraux */
+form {
+    margin: 0;
+}
+
+/* Boutons dans les petits formulaires en ligne */
+form[style*="display:inline;"] button {
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+/* Boîte pour les formulaires encadrés */
+form[style*="margin-bottom:20px"] {
+    background: #ffe6f0;
+    border: 1px solid #f9a9c4;
+    padding: 15px;
+    width: 400px;
+    border-radius: 6px;
+}
+
+/* Libellés de champ */
+label {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-top: 8px;
+    color: #7a3b55;
+}
+
+/* Style spécial pour le lien de déconnexion ou retour */
+p > a {
+    display: inline-block;
+    margin-bottom: 15px;
+    border: 2px solid #d6336c;
+    padding: 6px 12px;
+    border-radius: 5px;
+    background-color: #ffe6f0;
+}
+p > a:hover {
+    background-color: #d6336c;
+    color: white;
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* centre horizontal */
+    align-items: center;     /* centre vertical */
+    background: #ffe6f0;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #5a004f;
+}
+
+.register-container {
+    width: 320px;
+    padding: 30px 40px;
+    background: #fff0f6;
+    border-radius: 15px;
+    border: 2px solid #ff99cc;
+    box-shadow: 0 6px 15px rgba(255, 102, 179, 0.3);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.register-container h2 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #ff66b3;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* espace vertical entre champs */
+}
+
+.register-container form input[type="text"],
+.register-container form input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid #ff99cc;
+    border-radius: 30px;
+    font-size: 1em;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.register-container form input[type="text"]:focus,
+.register-container form input[type="password"]:focus {
+    border-color: #ff4da6;
+}
+
+.register-container form button {
+    width: 100%;
+    padding: 12px 0;
+    background: #ff66b3;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.register-container form button:hover {
+    background: #ff4da6;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #5a004f;
+}
+
+.register-link a {
+    color: #cc3377;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Uniformiser les messages d'erreur */
+.error-message {
+    color: red;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+}
